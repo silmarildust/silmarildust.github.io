@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>poetry — writing</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .content {
+      max-width: 800px;
+      padding: 2rem;
+      text-align: left;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .sections {
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .sections a {
+      color: #333;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+    }
+
+    .sections a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 0%;
+      background-color: #85B050;
+      z-index: -1;
+      transition: width 0.3s ease;
+    }
+
+    .sections a:hover::before {
+      width: 100%;
+    }
+
+    .sections a:hover {
+      color: white;
+    }
+
+    .home-button {
+      margin-top: 2rem;
+      text-align: right;
+    }
+
+    .home-button a {
+        font-size: 1rem;
+        color: #333;
+        text-decoration: none;
+        display: inline-block;
+        transition: transform 0.2s ease, text-decoration 0.2s ease;
+    }
+
+
+    .home-button a:hover {
+      transform: scale(1.1);
+      text-decoration: underline;
+    }
+
+    .footer {
+      position: relative;
+      bottom: 10px;
+      font-size: 0.75rem;
+      color: #777;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h2><strong>living in tide pools</strong></h2>
+    <div class="subtitle">my poetry collection</div>
+
+    <div class="sections">
+      <a href="foam.html">I. foam</a>
+      <a href="mist.html">II. mist</a>
+      <a href="earth.html">III. earth</a>
+    </div>
+
+    <div class="home-button">
+      <a href="writing.html">← back</a>
+    </div>
+  </div>
+</body>
+</html>

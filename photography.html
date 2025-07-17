@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>photography — janna's archive</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+
+    .gallery {
+      column-count: 2;
+      column-gap: 1rem;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .gallery img {
+      width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 0px;
+      display: block;
+      break-inside: avoid;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        column-count: 1;
+      }
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 1000;
+    }
+
+    .home-button a {
+      font-size: 1rem;
+      color: #333;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s ease, text-decoration 0.2s ease;
+    }
+
+    .home-button a:hover {
+      transform: scale(1.1);
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #777;
+      margin-top: 4rem;
+      }
+  </style>
+</head>
+<body>
+  <h2><strong>photography</strong></h2>
+  <p class="subtitle">I use both Canon G7X and Nikon Coolpix digicams. 
+    <br>This page is a work in progress but I just added some photos I had on hand!</p>
+
+  <div class="gallery">
+    <img src="photos/IMG_0789.jpg" alt="IMG_0789">
+    <img src="photos/IMG_0833.jpg" alt="IMG_0833">
+    <img src="photos/IMG_0908.jpg" alt="IMG_0908">
+    <img src="photos/IMG_0928.jpg" alt="IMG_0928">
+    <img src="photos/IMG_0958.jpg" alt="IMG_0958">
+    <img src="photos/IMG_0981.jpg" alt="IMG_0981">
+    <img src="photos/IMG_0983.jpg" alt="IMG_0983">
+    <img src="photos/IMG_1029.jpg" alt="IMG_1029">
+    <img src="photos/IMG_1112.jpg" alt="IMG_1112">
+    <img src="photos/DSCN8801.jpg" alt="DSCN8801">
+    <img src="photos/DSCN9072.jpg" alt="DSCN9072">
+    <img src="photos/DSCN9231.jpg" alt="DSCN9231">
+    <img src="photos/IMG_0716.jpg" alt="IMG_0716">
+    <img src="photos/IMG_1083.jpg" alt="IMG_1083">
+    <img src="photos/IMG_1132.jpg" alt="IMG_1132">
+    <img src="photos/DSCN8793.jpg" alt="DSCN8793">
+    <img src="photos/DSCN8816.jpg" alt="DSCN8816">
+    <img src="photos/DSCN8860.jpg" alt="DSCN8860">
+    <img src="photos/DSCN8896.jpg" alt="DSCN8896">
+    <img src="photos/DSCN8906.jpg" alt="DSCN8906">
+    <img src="photos/DSCN8911.jpg" alt="DSCN8911">
+    <img src="photos/DSCN8972.jpg" alt="DSCN8972">
+    <img src="photos/DSCN8977.jpg" alt="DSCN8977">
+    <img src="photos/DSCN8989.jpg" alt="DSCN8989">
+    <img src="photos/DSCN9057.jpg" alt="DSCN9057">
+    <img src="photos/DSCN9117.jpg" alt="DSCN9117">
+    <img src="photos/DSCN9145.jpg" alt="DSCN9145">
+    <img src="photos/DSCN9147.jpg" alt="DSCN9147">
+    <img src="photos/DSCN9180.jpg" alt="DSCN9180">
+    <img src="photos/DSCN9187.jpg" alt="DSCN9187">
+  </div>
+
+  <div class="home-button">
+    <a href="index.html">← home</a>
+  </div>
+</body>
+</html>

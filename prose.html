@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>prose — writing</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .content {
+      max-width: 600px;
+      padding: 2rem;
+      text-align: left;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .titles {
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .titles a {
+      color: #333;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      transition: color 0.2s ease;
+    }
+
+    .titles a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 0%;
+      background-color: #85B050;
+      z-index: -1;
+      transition: width 0.3s ease;
+    }
+
+    .titles a:hover::before {
+      width: 100%;
+    }
+
+    .titles a:hover {
+      color: white;
+    }
+
+    .home-button {
+      margin-top: 2rem;
+      text-align: right;
+    }
+
+    .home-button a {
+      font-size: 1rem;
+      color: #333;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s ease, text-decoration 0.2s ease;
+    }
+
+    .home-button a:hover {
+      transform: scale(1.1);
+      text-decoration: underline;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.75rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h2><strong>prose</strong></h2>
+
+    <div class="section">
+      <h3>fiction</h3>
+      <div class="titles">
+        <a href="thebeastofen.html">The Beast of En</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>articles</h3>
+      <div class="titles">
+        <a href="#">The price of green: Rethinking sustainability in the Philippines</a>
+        <a href="https://issuu.com/scischo/docs/the_science_scholar_-_september_2024-january_2025">Winging it: The physics behind Pisay's favorite flying disc</a>
+        <a href="https://medium.com/the-science-scholar/feature-from-paper-to-the-people-a-retrospect-of-batch-2027s-council-9c3586f9c29d">From Paper to the People: A Retrospect of Batch 2027’s Council</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>papers</h3>
+      <div class="titles">
+        <a href="immc2025.html">Global Sports League</a>
+        <a href="himcm2024.html">Examining the Environmental Impact of High-Powered Computing</a>
+        <a href="himcm2023.html">Charging Ahead with E-buses</a>
+        <a href="midmcm2022.html">Polygon Paradise Park</a>
+        
+      </div>
+    </div>
+
+    <div class="home-button">
+      <a href="writing.html">← back</a>
+    </div>
+  </div>
+</body>
+</html>
